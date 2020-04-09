@@ -323,7 +323,47 @@ header .ver-menu{
     height: 100px;
 }
 
- @media only screen and (max-width: 480px){
+.titulos-productos .tit-web{
+    background-image: url(../img/apple-laptop-notebook-office-39284(1).jpg);
+}
+
+.titulos-productos .tit-esc{
+    
+}
+
+/* formulario */
+
+.formcontacto{
+    width: 600px;
+    margin: 50px auto;
+}
+
+.formu{
+    background-color: #E6E6E6;
+    width: 100%;
+    padding: 30px;
+    /* con esto digo que si tiene borde o padding, que respete el tamaño */
+    box-sizing: border-box;
+    border-radius: 12px;
+}
+
+.formu label{
+    display: block;
+    padding-bottom: 3px;
+}
+
+.formu input[type="text"], input[type="email"], input[type="textarea"]{
+    width: 100%;
+}
+
+.formu .boton{
+    display: block;
+    padding-top: 3px;
+}
+
+
+
+ @media only screen and (min-width: 480px){
 
     .prod .fotos img{
         display: block;
@@ -359,10 +399,6 @@ header .ver-menu{
 
     .logo{
         padding: 0 0 0 1em;
-    }
-
-    .formcont{
-        margin-top: 2em;
     }
 }
 
