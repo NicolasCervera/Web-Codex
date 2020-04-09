@@ -152,8 +152,9 @@ iframe{
     text-align: justify;
 }
 
-.foto-nos{
+.nos .foto-nos{
     margin: 0 auto;
+    max-width: 1200px;
 }
 
 .prec{
@@ -323,12 +324,16 @@ header .ver-menu{
 }
 
  @media only screen and (max-width: 480px){
+
+    .prod .fotos img{
+        display: block;
+        margin-bottom: 2em;
+    }
     
     .ver-menu{
         display: none;
         cursor: pointer;
     }
-
 
     .tit1{
         padding-top: 8em;
@@ -354,6 +359,10 @@ header .ver-menu{
 
     .logo{
         padding: 0 0 0 1em;
+    }
+
+    .formcont{
+        margin-top: 2em;
     }
 }
 
