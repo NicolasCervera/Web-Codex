@@ -371,7 +371,7 @@ header .ver-menu{
 
 
 
- @media only screen and (min-width: 480px){
+ @media only screen and (max-width: 767px){
 
     .ver-menu{
         display: block;
@@ -420,7 +420,7 @@ header .ver-menu{
 }
 
 
-@media only screen and (max-width: 768px){
+/* @media only screen and (max-width: 768px){
     
     .ver-menu{
         display: none;
@@ -467,9 +467,18 @@ header .ver-menu{
         font: 40px Century Gothic;
         color:#3FD0D6;
     }
-} 
+}  */
+
+
+
+
+
 
 /* hoja de estilos exportada */
+
+
+
+
 
 /* img, object, embed, video {
 	max-width: 100%;
