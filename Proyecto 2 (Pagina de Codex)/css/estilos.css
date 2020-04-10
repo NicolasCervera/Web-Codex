@@ -324,8 +324,6 @@ header .ver-menu{
 }
 
 .ver-menu{
-    width: 100px;
-    height: 100px;
     display: none;
 }
 
@@ -340,7 +338,7 @@ header .ver-menu{
 /* formulario */
 
 .formcontacto{
-    width: 600px;
+    width: 50%;
     margin: 50px auto;
 }
 
@@ -362,6 +360,10 @@ header .ver-menu{
     width: 100%;
 }
 
+.formu #mensaje{
+    width: 100%;
+}
+
 .formu .boton{
     display: block;
     padding-top: 3px;
@@ -369,15 +371,16 @@ header .ver-menu{
 
 
 
- @media only screen and (max-width: 480px){
+ @media only screen and (min-width: 480px){
+
+    .ver-menu{
+        display: block;
+        cursor: pointer;
+    }
 
     .prod .fotos img{
         display: block;
         margin-bottom: 2em;
-    }
-    
-    .ver-menu{
-        display: none;
     }
 
     .tit1{
@@ -388,6 +391,15 @@ header .ver-menu{
 
     .navigation{
         width: 100%;
+        margin-top: 1rem;
+    }
+
+    .navigation ul{
+        display: none;
+    }   
+
+    .navigation ul.show{
+        display: block;
     }
 
     .navigation ul li{
