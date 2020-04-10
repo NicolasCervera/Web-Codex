@@ -323,6 +323,12 @@ header .ver-menu{
     height: 100px;
 }
 
+.ver-menu{
+    width: 100px;
+    height: 100px;
+    display: none;
+}
+
 .titulos-productos .tit-web{
     background-image: url(../img/apple-laptop-notebook-office-39284(1).jpg);
 }
@@ -363,7 +369,7 @@ header .ver-menu{
 
 
 
- @media only screen and (min-width: 480px){
+ @media only screen and (max-width: 480px){
 
     .prod .fotos img{
         display: block;
@@ -372,7 +378,6 @@ header .ver-menu{
     
     .ver-menu{
         display: none;
-        cursor: pointer;
     }
 
     .tit1{
@@ -406,8 +411,7 @@ header .ver-menu{
 @media only screen and (max-width: 768px){
     
     .ver-menu{
-        display: block;
-        cursor: pointer;
+        display: none;
     }
 
     .tit1{
