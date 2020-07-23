@@ -23,6 +23,9 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="js/menu.js"></script>
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
     <title>Codex-Tech</title>
 
 </head>
@@ -30,18 +33,35 @@
 <body>
 
     <header>
-        <div class="men logo-nav-container" id="menu">
-            <a href="index.html" class="logo">CODEX</a>
-            <b class="ver-menu">Ver Menú</b>
-                <nav class="navigation">
-                    <ul>
+        <div class="collapse bg-dark" id="navbarHeader">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-8 col-md-7 py-4">
+                  <h4 class="text-white">About</h4>
+                  <p class="text-muted">CODEX.</p>
+                </div>
+                <div class="col-sm-4 offset-md-1 py-4">
+                  <h4 class="text-white">Contact</h4>
+                  <ul class="list-unstyled">
                         <li><a href="#inicio"> Inicio </a></li>
                         <li><a href="#nosotros"> Nosotros </a></li>
                         <li><a href="#productos"> Productos </a></li>
                         <li><a href="#contacto"> Contacto </a></li>
-                    </ul>
-                </nav>
-        </div>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="navbar navbar-dark bg-dark shadow-sm">
+            <div class="container d-flex justify-content-between">
+              <a href="#" class="navbar-brand d-flex align-items-center">
+                <strong>CODEX</strong>
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+          </div>
     </header>
 
     <div class="titulos">
@@ -68,24 +88,18 @@
                             para el manejo de tu empresa.
                         </p>
                     </article>                   
-        
                 </div>
         
         
                 <!-- Nosotros -->
                 <div class="nos" id=nosotros>
                     <article>
-                        <h1><b>NOSOTROS</b></h1>
+                        <h1><b>Nosotros</b></h1>
                         <hr class="small">
                         <p>
-                            Codex-Tech es un emprendimiento enfocado en el <strong>desarrollo de sistemas de información</strong> brindando
-                            soluciones a la necesidad de su negocio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus nostrum, magni iste placeat, non repudiandae repellat doloremque quos modi consectetur ipsa beatae commodi nihil cumque ex? Voluptate illo assumenda accusamus quam natus quae, sunt, quibusdam quos blanditiis velit quidem! Eius.
-
+                            Codex.Tech es un emprendimiento enfocado en el desarrollo de sistemas de información que satisfagan tus necesidades de negocios, pudiendo así mejorar efectivamente todos los procesos de tu empresa, agilizándolos y manteniendo el control de todo lo que este al alcance en tu empresa y/o negocio.
                         </p>
                     </article>
-
-                    <!-- <div class="foto-nos"><img src="img/close-up-of-human-hand-327540.jpg" alt="Nosotros"></div> -->
-
                 </div>
         
         
@@ -95,43 +109,60 @@
                         <h1><b>Productos</b></h1>
                         <hr class="small">
                         <p>
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                            Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et 
-                            magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
-                             pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.
+                            Actualmente contamos con sistemas para bares o restaurantes, peluquerías e inmobiliarias.
                         </p>
                     </article>
 
-                    <!-- <div class="fotos">
-                        <img src="img/apple-laptop-notebook-office-39284 (1).jpg" alt="Web" class="img-derecha">
-                        <img src="img/person-looking-at-phone-and-at-macbook-pro-1181244 (1).jpg" alt="Escritorio" class="img-izquierda">
-                    </div> -->
-
-                    <div class="titulos-productos">
-                        <p class="tit-web"><strong>Páginas Web Estáticas</strong></p>
-                        <p class="tit-esc"><strong>Aplicaciones de Escritorio</strong></p>
-                    </div>
+                    <div class="album py-5 bg-light">
+                        <div class="container">
                     
+                          <div class="row">
+                            <div class="col-md-4">
+                              <div class="card mb-4 shadow-sm">
+                                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                                <div class="card-body">
+                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                  <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <div class="card mb-4 shadow-sm">
+                                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                                <div class="card-body">
+                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                  <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <div class="card mb-4 shadow-sm">
+                                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                                <div class="card-body">
+                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                  <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
                 </div>
-        
-        
-                <!-- Banner -->
-                <!-- <div class="slide-wrap" id="banner">
-                    <ul class="slider1">
-                        <li><img src="img/barba-3.jpg" alt="BOLD"></li>
-                        <li><img src="img/res.jpg" alt="MOSTACHE"></li>
-                    </ul>
-                </div> -->
-                
-        
-                <!-- Tabla de precios -->
-                <!-- <div class="prec" id=precios>
-                    <article>
-                        <h1>Tabla de Precios</h1>
-                        <hr class="small">
-        
-                    </article>
-                </div> -->
         
         
                 <!-- Contacto -->
@@ -151,39 +182,67 @@
                                 <input type="submit" value="Enviar" class="boton">
                             </form>
                         </div>
-
-                        
                         <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3369.0315265994113!2d-63.23803698482776!3d-32.3915165810901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95cc42cdd338b933%3A0x15547a3f42b7b110!2sInt.%20Urtubey%201254%2C%20Villa%20Mar%C3%ADa%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1585245003761!5m2!1ses-419!2sar" width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-        
                     </article>
                 </div>
         
             </div>
-        
-           
         </div>
     </div>
-
-    <footer>
-        <p>Página diseñada por <strong> <a href="index.html"> CODEX</a></strong>© 2020</p>
-        <!-- <div class="datos-pers">
-            <p>Número de celular: <a href="tel:3534771969" target="_blank"> 353-4771969</a></p>
-            <p>Correo: <a href="mailto: nicodapa@live.com" target="_blank"> nicodapa@live.com</a> </p>
-        </div> -->
-    
-    </footer>
-
-    <!-- scripts -->
-    <script>
-        $(document).ready(function(){
-        $('.slider1').bxSlider({
-            mode:'fade'
-        })
-        $('.slider2').bxSlider({
-            mode:'fade'
-        })
-        })
-    </script>
-
 </body>
+
+<footer>
+    <!-- <p>Página diseñada por <strong> <a href="index.html"> CODEX</a></strong>© 2020</p>
+    <!-- <div class="datos-pers">
+        <p>Número de celular: <a href="tel:3534771969" target="_blank"> 353-4771969</a></p>
+        <p>Correo: <a href="mailto: nicodapa@live.com" target="_blank"> nicodapa@live.com</a> </p>
+    </div> --> 
+        <div class="row">
+          <div class="col-12 col-md">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24" focusable="false"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
+            <small class="d-block mb-3 text-muted">&copy; 2017-2020</small>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Features</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Cool stuff</a></li>
+              <li><a class="text-muted" href="#">Random feature</a></li>
+              <li><a class="text-muted" href="#">Team feature</a></li>
+              <li><a class="text-muted" href="#">Stuff for developers</a></li>
+              <li><a class="text-muted" href="#">Another one</a></li>
+              <li><a class="text-muted" href="#">Last time</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Resources</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Resource</a></li>
+              <li><a class="text-muted" href="#">Resource name</a></li>
+              <li><a class="text-muted" href="#">Another resource</a></li>
+              <li><a class="text-muted" href="#">Final resource</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Resources</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Business</a></li>
+              <li><a class="text-muted" href="#">Education</a></li>
+              <li><a class="text-muted" href="#">Government</a></li>
+              <li><a class="text-muted" href="#">Gaming</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>About</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Team</a></li>
+              <li><a class="text-muted" href="#">Locations</a></li>
+              <li><a class="text-muted" href="#">Privacy</a></li>
+              <li><a class="text-muted" href="#">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+
+</footer>
+
+
 </html>
