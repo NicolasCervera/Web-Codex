@@ -37,22 +37,49 @@
     font-weight: 300;
   }
   
-  .jumbotron .container {
-    max-width: 40rem;
-  }
-  
   footer{
     padding-top: 3rem;
     padding-bottom: 3rem;
     width: 100%;
     padding-left: 10px;
     padding-right: 5px;
+    background-color: #343A40;
   }
   
   footer p {
     margin-bottom: .25rem;
   }
+
+  footer h5{
+      color: white;
+  }
+
+  footer p{
+    color: #63757D;
+  }
+
+
+  .containerPrice{
+      margin-top: 2em;
+  }
+
+  html {
+    font-size: 14px;
+  }
+  @media (min-width: 768px) {
+    html {
+      font-size: 16px;
+    }
+  }
   
+  
+  .pricing-header {
+    max-width: 700px;
+  }
+  
+  .card-deck .card {
+    min-width: 220px;
+  }
 
 /* mi hoja de estilos */
 
@@ -128,12 +155,6 @@
     padding-right: 5px;
 }
 
-.ini img{
-    width: 100%;
-    padding-top: 3em;
-    margin: auto auto;
-}
-
 .prod{
     margin-top: 10em;
     margin-bottom: 10em;
@@ -143,8 +164,6 @@
     padding-left: 5px;
     padding-right: 5px;
 }
-
-
 
 iframe{
     padding-top: 2em;
@@ -185,28 +204,6 @@ header{
     top: 0;
     right: 0;
 }
- 
-header ul li a{
-    font-size: 17px;
-    text-decoration: none;
-    padding: 7px 20px 7px 20px;
-}
-
-.navigation ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.navigation ul li{
-    display: inline-block;
-}
-
-.navigation ul li a{
-    display: block;
-    padding: 5px 30px 5px 30px;
-    margin-top: 7px;
-}
 
 section article h1{
     text-align: center;
@@ -214,72 +211,7 @@ section article h1{
     padding: 2px 0 17px 25%;
 }
 
-footer{
-    background-color: black;
-    width: 100%;
-}
-
-/* formulario */
-
-.formcontacto{
-    width: 50%;
-    margin: 50px auto;
-}
-
-.formu{
-    background-color: #E6E6E6;
-    width: 100%;
-    padding: 30px;
-    /* con esto digo que si tiene borde o padding, que respete el tamaño */
-    box-sizing: border-box;
-    border-radius: 12px;
-    box-shadow: -10px 10px 20px #7C7C7C;
-}
-
-.formu label{
-    display: block;
-    padding-bottom: 3px;
-}
-
-.formu input[type="text"], input[type="email"], .msj{
-    width: 100%;
-    border-radius: 10px;
-    font-size: 17px;
-}
-
-.formu #mensaje{
-    width: 100%;
-}
-
-.formu .boton{
-    display: block;
-    padding-top: 3px;
-}
-
-.boton{
-    margin: 2em auto;
-    font-size: 17px;
-    border-radius: 12px;
-}
-
-.msj{
-    border-radius: 12px;
-}
-
-
  @media only screen and (max-width: 767px){
-
-    .formu input[type="text"], input[type="email"], .msj{
-        width: 100%;
-        border-radius: 10px;
-        font-size: 12px;
-    }
-
-    .formcontacto{
-        min-width: 380px;
-        margin: 50px auto;
-    }    
-
     .tit1{
         padding-top: 11em;
         font-size: 40px;
