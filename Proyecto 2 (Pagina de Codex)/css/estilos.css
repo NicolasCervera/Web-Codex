@@ -90,23 +90,35 @@
 
 .contenedor h1{
     letter-spacing: 2px;
-    font-size: 22px;
+    font-size: 25px;
     padding-bottom: 1em;
     text-align: center;
-    text-shadow: 2px 2px 4px rgb(63, 63, 63);
+    text-shadow: 5px 3px 3px rgb(131, 131, 131);
 }
 
 .titulos{
     display: inline-block;
     text-align: center;
-    text-shadow: 3px 4px 3px black;
 }
 
 .small{
     max-width: 40px;
-    border-color: #3cb2b6;
+    border-color: #0069D9;
     border-width: 2px;
     margin: auto auto;
+}
+
+.separador{
+  max-width: 80%;
+  border-color: #a3a3a3;
+  border-width: 2px;
+  margin: auto auto;
+  margin-bottom: 12px;
+}
+
+.foot{
+  font-size: 18px;
+  margin: auto auto;
 }
 
 .titulos{
@@ -115,7 +127,6 @@
     min-width: 340px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 2em;
     margin-bottom: 2em;
     background-image: url(../img/black-samsung-tablet-computer-106344.jpg);
     background-size: cover;
@@ -133,16 +144,18 @@
 }
 
 .tit1{
-    padding-top: 13em;
+    padding-top: 12em;
     padding-left: 4px;
     padding-right: 4px;
     font-size: 40px;
-    color:#3cb2b6;
+    color:#343A40;
+    text-shadow: 4px 3px 2px #EFEEEC;
 }
 
 .tit2{
     font-size: 1.2em;
-    color: black;
+    color: white;
+    text-shadow: 4px 3px 2px black;
 }
 
 .ini{
@@ -167,19 +180,25 @@
 
 iframe{
     padding-top: 2em;
+    margin-bottom: 2em;
 }
 
 .nos{
     margin-bottom: 5em;
-    background-color: #E6E6E6;
-    width: 100%;
-    box-shadow: -10px 10px 20px #7C7C7C;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 5em;
-    padding: 1em 1em 1em 1em;
-    border-radius: 12px;
-    align-items: center;
+    padding: 5em 10em 20em 1em;
+    border-radius: 20px;
+    text-align: center;
+    background-image: url('https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    box-shadow: 15px 20px 20px black;
+    margin: auto auto;
+    margin-top: 2em;
+    text-align: justify;
+    max-width: 1200px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: white;
+    text-shadow: 2px 2px 2px #292929;
 }
 
 .nos p{
@@ -198,7 +217,6 @@ article p{
 }
 
 header{
-    position: fixed;
     box-shadow: -10px 10px 15px black;
     left: 0;
     top: 0;
@@ -212,14 +230,18 @@ section article h1{
 }
 
  @media only screen and (max-width: 767px){
-    .tit1{
-        padding-top: 11em;
-        font-size: 40px;
-        color:#3FD0D6;
-    }
+  .tit1{
+    padding-top: 10em;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: 40px;
+    color:#343A40;
+    text-shadow: 4px 3px 2px #EFEEEC;
+}
 
-    .tit2{
-        font-size: 1.2em;
-        color: black;
-    }
+.tit2{
+    font-size: 1.2em;
+    color: white;
+    text-shadow: 4px 3px 2px black;
+}
 }
