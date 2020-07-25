@@ -148,14 +148,14 @@
     padding-left: 4px;
     padding-right: 4px;
     font-size: 40px;
-    color:#343A40;
-    text-shadow: 4px 3px 2px #EFEEEC;
+    color:#3773F2;
+    text-shadow: 3px 3px 2px #494949;
 }
 
 .tit2{
     font-size: 1.2em;
     color: white;
-    text-shadow: 4px 3px 2px black;
+    text-shadow: 2px 2px 2px black;
 }
 
 .ini{
@@ -221,6 +221,11 @@ header{
     left: 0;
     top: 0;
     right: 0;
+    text-decoration: none;
+}
+
+header ul li a{
+  text-decoration: none;
 }
 
 section article h1{
@@ -231,7 +236,7 @@ section article h1{
 
  @media only screen and (max-width: 767px){
   .tit1{
-    padding-top: 10em;
+    padding-top: 9em;
     padding-left: 4px;
     padding-right: 4px;
     font-size: 40px;
